@@ -1,0 +1,31 @@
+SMS Spam Classification Results
+
+Train size: 4136
+Test size: 1035
+
+Logistic Regression:
+              precision    recall  f1-score   support
+
+         ham       0.99      0.99      0.99       904
+        spam       0.91      0.94      0.92       131
+
+    accuracy                           0.98      1035
+   macro avg       0.95      0.96      0.96      1035
+weighted avg       0.98      0.98      0.98      1035
+
+Accuracy: 0.9807
+Confusion matrix (ham, spam):
+[[892  12]
+ [  8 123]]
+
+Naive Bayes (bonus comparison):
+              precision    recall  f1-score   support
+
+         ham       0.98      1.00      0.99       904
+        spam       0.99      0.83      0.90       131
+
+    accuracy                           0.98      1035
+   macro avg       0.98      0.92      0.95      1035
+weighted avg       0.98      0.98      0.98      1035
+
+Limitation: older dataset, class imbalance, and changing spam patterns.

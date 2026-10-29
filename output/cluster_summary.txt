@@ -1,0 +1,25 @@
+K-Means Clustering Summary
+k = 2; TF-IDF text features; labels were not used for training.
+Silhouette score (300-message sample): 0.019
+
+Cluster sizes:
+cluster
+0    4506
+1     665
+Name: count, dtype: int64
+
+Known label counts AFTER clustering:
+label     ham  spam
+cluster            
+0        4376   130
+1         142   523
+
+Cluster 0: 4506 messages
+Top words: you, to, the, in, me, and, it, my, is, number
+Interpretation: The cluster shares these words; its most common known label is ham. This is not the meaning of the cluster ID.
+
+Cluster 1: 665 messages
+Top words: number, to, call, free, your, or, txt, now, you, claim
+Interpretation: The cluster shares these words; its most common known label is spam. This is not the meaning of the cluster ID.
+
+Note: Clusters do not have to match ham/spam labels.
